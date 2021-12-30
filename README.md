@@ -4,9 +4,9 @@ Il s'agit d'un simple jeu Tetris codé en utilisant la bibliothèque PyGame en P
 Une proposition de découpage en classes:
 
 Classe Figure:
+  
   attributs:
-    
-	x : int
+    x : int
     y : int
     type : int
     color : int
