@@ -8,7 +8,7 @@ Il s'agit d'un simple jeu Tetris codé en utilisant la bibliothèque PyGame en P
 
 ## Une proposition de découpage en classes:
 
-*Classe Figure()*
+*Classe Figures()*
 ```
 def __init__(self, x, y):
         self.x = x
@@ -22,7 +22,7 @@ def image(self):
 def rotate(self):
 ```
 
-*class Tetris:*
+*Classe Game:*
 ```
 def __init__(self, height, width):
         self.height = height
