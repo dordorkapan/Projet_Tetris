@@ -5,7 +5,6 @@
 - [x] créer les figures
 - [x] créer la classe Figure
 
-### 9/1/22
-- [ ] créer 'def new_figure' , 'def intersects' et 'def break_lines' 
-- [ ] créer 'def go_space' , 'def go_down' et 'def freeze'
+### 28/12/21 - 9/1/22
+- [ ] créer Classe Game 
 - [ ] écrire les touches finales
