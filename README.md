@@ -46,4 +46,6 @@ def freeze(self):
 def go_side(self):
 
 def rotate(self):
+
+def score(self):
 ```
