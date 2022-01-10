@@ -6,6 +6,11 @@ Il s'agit d'un simple jeu Tetris codé en utilisant la bibliothèque PyGame en P
 - Le joueur utilise les flèches directionnelles pour déplacer les figurines.
 - Si une figurine gelée touche le haut du plateau, le jeu se termine.
 
+##Commandes:
+- ^ : Rotation des figures
+- <- ou -> : déplacement a gauche et adroite des figures
+- v : fait tomber les figures plus vite
+
 ## Découpage en classes:
 
 *Classe Figures()*
@@ -69,3 +74,8 @@ def rotate(self):
 
 def score(self):
 ```
+
+## Idées d'amélioration:
+- Faire une fenêtre qui vous montrera quelle sera votre prochaine figure
+- introduir plus des niveau
+- enregistrer votre score le plus élevé précédent
