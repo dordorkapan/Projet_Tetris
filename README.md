@@ -15,9 +15,9 @@ Il s'agit d'un simple jeu Tetris codé en utilisant la bibliothèque PyGame en P
 
 *Classe Figures()*
 ```
-"""
-description et fonctions des figures
-"""
+        """
+        description et fonctions des figures
+        """
 def __init__(self, x, y):
         self.x = x
         self.y = y
@@ -31,19 +31,19 @@ def image(self):
         """
 
 def rotate(self):
-"""
+        """
         calculer l'état de rotation dans lequel se trouve la figure
         """
 ```
 
 *Classe Game:*
 ```
-"""
-    les principales fonctions du jeu
-    """
+        """
+        les principales fonctions du jeu
+        """
     
 def __init__(self, height, width):
-"""
+        """
         spécifie des attributs et crée un champ avec 
         la taille hauteur x largeur
         """
@@ -54,25 +54,40 @@ def __init__(self, height, width):
         self.state = "start"
         
 def new_figure(self):
- """
+         """
         Créer une nouvelle figure et la positionner aux coordonnées (3,0)
         """
 
 def intersects(self):
-
+        """
+        vérifie si la figure actuellement en vol croise quelque chose 
+        de fixe sur le terrain. Cela peut se produire lorsque la figure 
+        se déplace vers la gauche, la droite, le bas ou en rotation.
+        """
 def break_lines(self):
-
-def go_space(self):
-
+        """
+        regarde s'il y a des lignes horizontales pleines qui doivent être détruites. 
+        Ensuite, nous créons une nouvelle figure, et si elle se croise déjà, alors 
+        la partie est terminée.
+        """
 def go_down(self):
-
+        """
+        Si vous cliquez sur la flèche du bas, le figure descendra plus rapidement
+        """
 def freeze(self):
-
+        """
+        vérifie si nous sommes autorisés à déplacer ou faire pivoter la figure. 
+        S'il descend et se coupe, cela signifie que nous avons atteint le bas,
+        nous devons donc « geler » la figure sur notre champ
+        """
 def go_side(self):
-
+        """
+        Si vous cliquez sur les flèches latérales, la figure ira à gauche ou à droite
+        """
 def rotate(self):
-
-def score(self):
+        """
+        Si vous cliquez sur les flèches vers le haut, l'état de rotation de la figure changera
+        """
 ```
 
 ## Idées d'amélioration:
