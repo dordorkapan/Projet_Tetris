@@ -36,7 +36,7 @@ def rotate(self):
         """
 ```
 
-*Classe Game:*
+*Classe Game()*
 ```
         """
         les principales fonctions du jeu
