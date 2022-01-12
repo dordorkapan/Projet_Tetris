@@ -23,14 +23,14 @@ def __init__(self, x, y):
         self.y = y
         self.type
         self.color
-        self.rotation
+        self.rotation = 0
 
 def image(self):
         """
         retourner une figure choisie, sa forme et son point de rotation
         """
 
-def rotate(self):
+def pivoter(self):
         """
         calculer l'état de rotation dans lequel se trouve la figure
         """
@@ -53,37 +53,42 @@ def __init__(self, height, width):
         self.score = 0
         self.state = "start"
         
-def new_figure(self):
-         """
+def nouv_figure(self):
+        """
         Créer une nouvelle figure et la positionner aux coordonnées (3,0)
         """
 
-def intersects(self):
+def croiser(self):
         """
         vérifie si la figure actuellement en vol croise quelque chose 
         de fixe sur le terrain. Cela peut se produire lorsque la figure 
         se déplace vers la gauche, la droite, le bas ou en rotation.
         """
-def break_lines(self):
-        """
-        regarde s'il y a des lignes horizontales pleines qui doivent être détruites. 
-        Ensuite, nous créons une nouvelle figure, et si elle se croise déjà, alors 
-        la partie est terminée.
-        """
-def go_down(self):
-        """
-        Si vous cliquez sur la flèche du bas, le figure descendra plus rapidement
-        """
+
 def freeze(self):
         """
         vérifie si nous sommes autorisés à déplacer ou faire pivoter la figure. 
         S'il descend et se coupe, cela signifie que nous avons atteint le bas,
         nous devons donc « geler » la figure sur notre champ
         """
-def go_side(self):
+       
+def casser_lignes(self):
+        """
+        regarde s'il y a des lignes horizontales pleines qui doivent être détruites. 
+        Ensuite, nous créons une nouvelle figure, et si elle se croise déjà, alors 
+        la partie est terminée.
+        """
+
+def descendre(self):
+        """
+        Si vous cliquez sur la flèche du bas, le figure descendra plus rapidement
+        """
+
+def aller_cote(self):
         """
         Si vous cliquez sur les flèches latérales, la figure ira à gauche ou à droite
         """
+
 def rotate(self):
         """
         Si vous cliquez sur les flèches vers le haut, l'état de rotation de la figure changera
